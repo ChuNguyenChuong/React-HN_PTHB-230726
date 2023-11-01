@@ -1,0 +1,12 @@
+.classDone {
+  text-decoration: line-through;
+}
+
+.item {
+  color: red;
+}
+
+.classNotDone {
+
+  color: red;
+}

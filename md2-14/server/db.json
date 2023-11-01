@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe  - admin",
+      "age": 19,
+      "email": "user1@gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "avt": "https://static.gamehub.vn/img/files/2023/01/15/gamehubvn-top-phim-hoat-hinh-trung-quoc-cho-ban-cay-ngay-tet-nay.jpg"
+    },
+    {
+      "id": 2,
+      "name": "John Doe - user",
+      "age": 19,
+      "email": "user2@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "avt": "https://image-us.24h.com.vn/upload/4-2019/images/2019-10-31/1572488402-287-hot-girl-tu-linh-mu-song-ra-sao-sau-2-nam-ket-hon-voi-doanh-nhan-dien-trai-tulinh-0-1572432546-width660height470.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "coca cola",
+      "price": 10000,
+      "img": "https://thegioidouong.net/wp-content/uploads/2021/06/coca-300ml-chai-nhua.jpg"
+    },
+    {
+      "id": 2,
+      "name": "bim bim oishi",
+      "price": 5000,
+      "img": "https://product.hstatic.net/200000506129/product/snack-vi-tom-cay-oishi-goi-39g-202203281408170888_b541e352879041c2b3b45edbca2f0709_master.jpg"
+    },
+    {
+      "id": 3,
+      "name": "banh sinh nhat",
+      "price": 15000,
+      "img": "https://banhkemmini.vn/files/sanpham/213/1/jpg/banh-sinh-nhat-trai-tim-phu-red-velvet.jpg"
+    }
+  ]
+}
