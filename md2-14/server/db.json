@@ -37,6 +37,12 @@
       "name": "banh sinh nhat",
       "price": 15000,
       "img": "https://banhkemmini.vn/files/sanpham/213/1/jpg/banh-sinh-nhat-trai-tim-phu-red-velvet.jpg"
+    },
+    {
+      "id": 4,
+      "name": "banh kem",
+      "price": 20000,
+      "img": "https://banhkemmini.vn/files/sanpham/213/1/jpg/banh-sinh-nhat-trai-tim-phu-red-velvet.jpg"
     }
   ]
 }

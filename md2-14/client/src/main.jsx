@@ -8,6 +8,7 @@ import store from "./store";
 import { Provider } from "react-redux"
 import LoginPage from "./pages/LoginPage"
 import Auth from './components/Auth';
+import CartPage from './pages/CartPage';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App />
+      },
+      {
+        path: "/cart",
+        element: <CartPage></CartPage>
       },
       {
         path: "/admin",
