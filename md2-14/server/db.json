@@ -7,7 +7,8 @@
       "email": "user1@gmail.com",
       "password": "123456",
       "role": "admin",
-      "avt": "https://static.gamehub.vn/img/files/2023/01/15/gamehubvn-top-phim-hoat-hinh-trung-quoc-cho-ban-cay-ngay-tet-nay.jpg"
+      "avt": "https://static.gamehub.vn/img/files/2023/01/15/gamehubvn-top-phim-hoat-hinh-trung-quoc-cho-ban-cay-ngay-tet-nay.jpg",
+      "isActive": true
     },
     {
       "id": 2,
@@ -16,7 +17,26 @@
       "email": "user2@gmail.com",
       "password": "123456",
       "role": "user",
-      "avt": "https://image-us.24h.com.vn/upload/4-2019/images/2019-10-31/1572488402-287-hot-girl-tu-linh-mu-song-ra-sao-sau-2-nam-ket-hon-voi-doanh-nhan-dien-trai-tulinh-0-1572432546-width660height470.jpg"
+      "avt": "https://image-us.24h.com.vn/upload/4-2019/images/2019-10-31/1572488402-287-hot-girl-tu-linh-mu-song-ra-sao-sau-2-nam-ket-hon-voi-doanh-nhan-dien-trai-tulinh-0-1572432546-width660height470.jpg",
+      "isActive": false
+    },
+    {
+      "name": "cnchuong",
+      "age": "age",
+      "email": "chunguyenchuong2014bg@gmail.com",
+      "password": "123",
+      "avt": "https://firebasestorage.googleapis.com/v0/b/angelic-pipe-307119.appspot.com/o/images%2Ftest-tai-len-fire-base.jpg?alt=media&token=3756535c-d55b-431a-8aca-034c2b9de924",
+      "isActive": true,
+      "id": 3
+    },
+    {
+      "name": "Chu Nguyen Chuong",
+      "age": "12",
+      "email": "cnchuong@cmcglobal.vn",
+      "password": "123",
+      "avt": "https://firebasestorage.googleapis.com/v0/b/angelic-pipe-307119.appspot.com/o/images%2Fabout-us-1.png?alt=media&token=834dbd4d-1509-41c7-a239-fd568f43bbab",
+      "isActive": true,
+      "id": 4
     }
   ],
   "products": [
@@ -43,6 +63,45 @@
       "name": "banh kem",
       "price": 20000,
       "img": "https://banhkemmini.vn/files/sanpham/213/1/jpg/banh-sinh-nhat-trai-tim-phu-red-velvet.jpg"
+    },
+    {
+      "name": "bimbim",
+      "price": "1000",
+      "avt": "https://firebasestorage.googleapis.com/v0/b/angelic-pipe-307119.appspot.com/o/images%2Fabout-us-1.png?alt=media&token=512f3f86-9f92-445b-a500-1dc2390e05a1",
+      "isActive": true,
+      "id": 5
+    },
+    {
+      "name": "birt ",
+      "price": "1233",
+      "id": 6
+    },
+    {
+      "name": "san pham 2",
+      "price": "123",
+      "img": "https://firebasestorage.googleapis.com/v0/b/angelic-pipe-307119.appspot.com/o/images%2Fbird-wings-flying-feature.gif?alt=media&token=b6cb3adc-60b3-435c-9589-b58b2cd17fda",
+      "id": 7
+    },
+    {
+      "name": "asdasd",
+      "price": "asdasd",
+      "img": "https://firebasestorage.googleapis.com/v0/b/angelic-pipe-307119.appspot.com/o/images%2Fbird-wings-flying-feature.gif?alt=media&token=155811a7-8dc5-4bd1-9853-aec7ae458c39",
+      "id": 8
+    }
+  ],
+  "cart": [
+    {
+      "userId": 2,
+      "cartList": [
+        {
+          "id": 1,
+          "name": "coca cola",
+          "price": 10000,
+          "img": "https://thegioidouong.net/wp-content/uploads/2021/06/coca-300ml-chai-nhua.jpg",
+          "counter": 4
+        }
+      ],
+      "id": 1
     }
   ]
 }

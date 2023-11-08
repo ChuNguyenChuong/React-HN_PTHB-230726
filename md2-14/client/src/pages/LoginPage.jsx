@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setUserLogin } from "../store/auth";
+import { addDefaultCart } from "../store/cart";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("user1@gmail.com");
@@ -35,8 +36,19 @@ const LoginPage = () => {
       if (res.data.length === 0) {
         alert("email or password khong dung ")
       } else {
-        dispatch(setUserLogin(res.data[0]))
-        localStorage.setItem("user", JSON.stringify(res.data[0]))
+        const user = res.data[0]
+        console.log("🚀 ~ file: LoginPage.jsx:40 ~ getUserServer ~ user:", user)
+        const cartInDb = await axios.get(`http://localhost:3000/cart?userId=${user.id}`)
+        dispatch(setUserLogin(user))
+        if (cartInDb.data.length !== 0) {
+          dispatch(addDefaultCart(cartInDb.data))
+        }
+
+        localStorage.setItem("user", JSON.stringify(user))
+        if (user.role === "admin") {
+          navigate("/admin/dashboard");
+          return
+        }
         navigate("/")
       }
     }

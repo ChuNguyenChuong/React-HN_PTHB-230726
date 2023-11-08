@@ -1,17 +1,18 @@
 import { AiFillDelete, AiOutlineMinus } from "react-icons/ai"
 import { BsPlus } from "react-icons/bs"
 import { decrementProduct, deleteProduct, incrementProduct } from "../store/cart"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 
 const CartCard = (props) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const user = useSelector(state => state.auth.user)
 
   const handleIncrement = () => {
-    dispatch(incrementProduct(props.id))
+    dispatch(incrementProduct({ id: props.id, userId: user.id }))
   }
 
   const handleDecrement = () => {
-    dispatch(decrementProduct(props.id))
+    dispatch(decrementProduct({ id: props.id, userId: user.id }))
   }
 
   const handleDelete = () => {
